@@ -16,6 +16,9 @@ var count = m * 6 + second * 0.1;
 
 hour.style.transform = `rotate(${h * 30 + m / 2}deg)`;
 var hourCount = h * 30 + m / 2 + second * 1 / 120;
+var item = document.createElement("footer")
+    item.innerText = "Made by prashant singh"
+document.querySelector("body").appendChild(item)
 // console.log(h);
 // console.log(h*30+m/2);
 function clock() {
