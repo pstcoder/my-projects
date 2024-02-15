@@ -125,3 +125,13 @@ select:focus{
     /* top: 50%; */
     z-index: 9;
 }
+footer {
+    width: 100%;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background-color: rgb(8, 15, 73);
+    position: fixed;
+    bottom: 0;
+}
+
