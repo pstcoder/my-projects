@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            gap: 20px;
+        }
+        .middle{
+            width: 400px;
+            /* height: 100px; */
+            border: 1px black solid;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .click{
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+            margin: 20px 0 5px 0;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .copy{
+            /* width: 100px; */
+            height: 20px;
+            padding: 3px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 25px 5px grey;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        .fa-solid{
+            margin: 0 3px;
+            cursor: pointer;
+            display: block;
+        }    
+        .fa-check{
+            display: none;
+        }
+        @media only screen and (min-width:0) and (max-width:500px) {
+            .middle{
+                max-width: 200px;
+                min-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="middle">
+            <h1 id="head">#fff</h1>
+            <div onclick="copy()" style="text-align: center;"><i class="fa-solid fa-copy" title="Copy to clipboard"></i><i title="Copied" class="fa-solid fa-check" style="display: none;"></i></div>
+            <div class="click" onclick="change()">Click Me</div>
+        </div>
+    </div>
+    <script>
+        var copyEl = document.querySelector(".fa-copy")
+        var check = document.querySelector(".fa-check")
+        
+        var head = document.getElementById("head");
+        var main = document.getElementsByClassName("main")[0];
+        var ind = document.getElementById("ind")
+        function change(){
+            copyEl.style.display = "block"
+            check.style.display = "none"
+            var r = Math.floor(Math.random()*256);
+            var g = Math.floor(Math.random()*256);
+            var b = Math.floor(Math.random()*256);
+            var color = "#"+(r.toString(16))+(g.toString(16))+(b.toString(16));
+            if(color.length == 6) color += "f"
+            head.innerText = color;
+            main.style.backgroundColor = color;
+            console.log(r,g,b);
+        }
+        function copy(){
+            navigator.clipboard.writeText(head.innerText);
+            copyEl.style.display = "none"
+            check.style.display = "block"
+        }
+        
+        
+    </script>
+    <script src="https://kit.fontawesome.com/95153ef84d.js" crossorigin="anonymous"></script>
+</body>
+</html>
