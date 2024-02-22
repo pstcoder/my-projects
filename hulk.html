@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 600px;
+            height: 350px;
+            margin: 160px auto;
+            background: linear-gradient(180deg,rgb(4, 128, 4), rgb(44, 43, 43));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: relative;
+            /* z-index: -1; */
+        }
+        .child{
+            width: 250px;
+            height: 400px;
+            margin-bottom: 53px;   
+            /* border: 1px blue solid; */
+            position: absolute;     
+            transition: 1s;
+            
+        }
+        .child1{
+            width: 340px;
+            height: 400px;
+            margin-bottom: 53px;   
+            /* border: 1px red solid; */
+            position: absolute;     
+            opacity: 0;
+            transition: 1s;
+            
+        }
+        .child img{
+            width: 100%;
+            height: 100%;
+        }
+        .child1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .parent:hover .child1{
+            opacity: 1;
+            transform: translateX(200px) scale(1.2,1.2);
+        }
+        .parent:hover .child{
+            opacity: 0;
+            transform: translateX(200px) ;
+        }
+        .text{
+            width: 50%;
+            height: 100%;
+            /* border: 1px black solid; */
+            padding: 15px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: 1s;
+
+        }
+        .god{
+            font-size: 30px;
+            color: chartreuse;
+        }
+        .content{
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+            color: wheat;
+        }
+        .rm{
+            width: 130px;
+            height: 40px;
+            background-color: rgb(231, 231, 231);
+            color: blue;
+            font-size: 22px;
+            font-family: arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .parent:hover .text{
+            transform: translateX(-120px);
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"><img src="hulk-removebg-preview.png"></div>
+        <div class="child"><img src="banner.png"></div>
+        <div class="text"><span class="god">HULK</span> <span class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos molestiae nesciunt sint soluta ipsa dolorum dolor cumque saepe recusandae officiis nemo, temporibus commodi, laboriosam repellendus totam ut illo eum. Dignissimos.</span>
+            <span class="rm">Read More</span></div>
+    </div>
+</body>
+</html>
