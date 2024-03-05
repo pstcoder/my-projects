@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+.main{
+    width: 1000px;
+    /* height: 5000px; */
+    /* border: 1px red solid; */
+    margin: auto;
+
+}
+header{
+    width: 100%;
+    height: 1406px;
+    background: url(../images/headerbg.jpg) no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.logo{
+    margin-top: 80px;
+}
+.logo-north{
+    margin-top: 80px;
+    margin-right: 10px;
+}
+nav{
+    width: 100%;
+    height: 462px;
+    background: rgba(0,0, 0,0.5);
+    border-top: #182d55 14px solid;
+    align-self: flex-end;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap:8px ;
+}
+nav ul li{
+    border-right: 2px white solid;
+    padding: 12px 42px;
+}
+.middle{
+    width: 100%;
+    height: 262px;
+    background: #182d55 url(../images/helicopters.jpg) center center no-repeat;
+}
+section{
+    width: 100%;
+    /* height: 1011px; */
+    /* border: 1px black solid; */
+}
+.top{
+    width: 100%;
+    height: 321px;
+}
+#aa .top{
+    background: url(../images/frameimg1.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#hs .top{
+    background: url(../images/frameimg2.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#ftc .top{
+    background: url(../images/frameimg3.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#c .top{
+    background: url(../images/frameimg4.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#cu .top{
+    background: url(../images/frameimg5.jpg) no-repeat fixed;
+    background-size: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aa{
+    display: flex;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+    font-weight: bold;
+    display: flex;
+}
+.line{
+    width: 234px;
+    height: 4px;
+    background: white;
+    margin-top: 25px;
+}
+.area{
+    border: 8px white solid;
+    padding: 3px 8px;
+}
+.bottom{
+    width: 98%;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #182d55;
+    text-align: center;
+    margin: 100px auto;
+    line-height: 30px;
+}
+.fan{
+    margin-top: 100px;
+}
+#cu .bottom{
+    font-size: 26px;
+}
