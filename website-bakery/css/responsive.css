@@ -1,0 +1,193 @@
+@media (min-width:552px){
+    
+    #banner h1{
+        font-size: 50px;
+    }
+    .col-g{
+        padding: 0 40px;
+    }
+    .extra{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .s3-cont{
+        padding: 15px 107px;
+        gap: 108px;
+    }
+    .s4-cont{
+        padding: 0 70px 30px;
+    }
+    .outer-box{
+        width: 75%;
+        margin: 0 auto ;
+    }
+    .abu,.news,.follow{
+        max-width: 50%;
+    }
+    .s5-cont{
+        max-width: 540px;
+        margin: 0px auto;
+    }
+    .parent3{
+        max-width: 500px;
+        margin: auto;
+    }
+    .container4{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    #banner{
+        height: 800px;
+    }
+    #banner h1{
+        font-size: 50px;
+    }
+    .about-img{
+        display: block;
+    }
+    .col-g{
+        max-width: 75%;
+        padding: 0;
+    }
+    .big-box{
+        width: 50%;
+    }
+    .extra{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .s3-cont{
+        padding: 15px 40px;
+        gap: 70px;
+    }
+    .s3-box{
+        width: 46%;
+    }
+    .s4-cont{
+        padding: 0 120px 30px;
+    }
+    .outer-box{
+        width: 32%;
+        flex-grow: 0;
+    }
+    .parent2{
+        gap: 15px;
+    }
+    .s5-cont{
+        max-width: 720px;
+        margin: 0px auto;
+    }
+    #banner-new{
+        height: 328px ;
+    }
+    .parent3{
+        max-width: 700px;
+        margin: auto;
+        
+    }
+    .container4{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){
+    #banner{
+        height: 100vh;
+    }
+    .top-tray{
+        display: flex;
+    }
+    .main{
+        padding: 0 30px;
+    }
+    #menu{
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+        color: #222;
+        height: auto;
+        width: auto;
+    }
+    nav{
+        margin-top: 10px;
+    }
+    .ham-menu{
+        display: none;
+    }
+    #banner h1{
+        font-size: 68px;
+    }
+    .big-box{
+        width: 25%;
+    }
+    .extra{
+        display: flex;
+        
+    }
+    .video{
+        width: 50%;
+        flex-shrink: 0;
+    }
+    .s3-box{
+        width: 48%;
+    }
+    .s4-cont{
+        padding: 0 150px 30px;
+    }
+    .abu,.news{
+        max-width: 41.6667%;
+    }
+    .follow{
+        margin-top: 0;
+    }
+    .s5-cont{
+        max-width: 100%;
+    }
+    .extra3{
+        max-width: 950px;
+    }
+    .extra6{
+        height: 60% !important;
+    }
+    .parent3{
+        max-width: 100%;
+        
+    }
+    .container4{
+        max-width: 100%;
+    }
+    .mla-top{
+        max-width: 75%;
+    }
+    .mla-bottom{
+        max-width: 25%;
+    }
+    .address{
+        width: 33%;
+    }
+    form{
+        width: 66.67%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .input-box{
+        width: 45%;
+    }
+}
+@media (min-width:1050px){
+    .extra3{
+        max-width: 1000px;
+    }
+}
+@media (min-width:1200px){
+    .extra3{
+        max-width: 1100px;
+    }
+}
+@media(min-width:1250px){
+    .extra3{
+        max-width: 1200px;
+    }
+}
